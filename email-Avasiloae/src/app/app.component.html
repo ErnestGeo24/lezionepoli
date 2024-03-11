@@ -3,10 +3,11 @@
   <label for="destinatario">To</label> <br>
 
   <input name= "oggetto" type="text" #oggetto>
-  <label for="oggetto">oggetto/label> <br>
+  <label for="oggetto">oggetto </label> <br>
 
   <input name= "corpo" type="text"#corpo>
   <label for="corpo">corpo</label> <br>
 
-  <button>Invia</button>
-</form>
+  <button (click)= "nuovaMail(destinatario,oggetto,corpo)">Invia</button>
+
+  <form>
